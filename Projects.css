@@ -1,0 +1,31 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+    user-select: none; /* L'utilisateur ne pourra plus sélectionner le texte de l'élément qui possède cette propriété CSS */
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+.Projects{
+    position: absolute;
+    top: 1100px;
+    height: 500px;
+    width: 100%;
+    background-color: red;
+}
+
+@media screen and (min-device-width : 300px) and (max-device-width : 480px) {}
+    
+@media screen and (min-device-width : 481px) and (max-device-width : 767px) {}
+
+@media screen and (min-device-width : 768px) and (max-device-width : 1024px) {}
+
+@media screen and (min-device-width : 1025px) and (max-device-width : 1824px) {}
+
+@media screen and (min-device-width : 1825px) {}   

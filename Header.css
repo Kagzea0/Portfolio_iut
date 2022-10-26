@@ -1,0 +1,640 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+    user-select: none; /* L'utilisateur ne pourra plus sélectionner le texte de l'élément qui possède cette propriété CSS */
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+body, html{
+    display: block;
+    min-width: 300px;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(#0c102c,#383077);
+}
+
+@media screen and (min-device-width : 300px) and (max-device-width : 480px) {
+
+    #logo{
+        width: 50px; 
+    }
+
+    #logo_a{
+        z-index: 1;
+        position: absolute; 
+        top: 1%;
+        right: 1%;
+    }
+    
+    /* The side navigation menu */
+    .sidenav {
+        width: 0;    /* 0 width - change this with JavaScript */
+        position: absolute;    /* Stay in place */
+        z-index: 1;    /* Stay on top */
+        top: 0;
+        left: 0;
+        overflow-x: hidden;    /* Disable horizontal scroll */
+        padding-top: 50px;    /* Place content 60px from the top */
+        transition: 0.5s;    /* 0.5 second transition effect to slide in the sidenav */
+    }
+    
+    /* The navigation menu links */
+    .sidenav a {
+        padding: 8px 8px 8px 20px;
+        text-decoration: none;
+        opacity: 0.92;
+        font-size: 20px;
+        color: #c4bcbc;
+        display: block;
+        transition: 0.2s;
+    }
+    
+    /* When you mouse over the navigation links, change their color */
+    .sidenav a:hover, .offcanvas a:focus {
+        color: #fff;
+    }
+    
+    /* Position and style the close button (top right corner) */
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        opacity: 0;
+        right: 120px;
+        font-size: 20px;
+        margin-left: 50px;
+    }
+    
+    /* Style page content - use this if you want to push the page content to the 
+    right when you open the side navigation */
+    #main {
+        transition: margin-left .5s;
+        padding: 20px;
+        overflow: hidden;
+        width: 290px;
+    }
+    
+    /* Style the links inside the navigation bar */
+    .topnav a {
+        float: left;
+        display: block;
+        color: #c4bcbc;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    
+    /* Change the color of links on hover */
+    .topnav a:hover {
+        background: none;
+        color: #c4bcbc;
+    }
+    
+    /* Add a color to the active/current link */
+    .topnav a.active {
+        background: none;
+        color: #c4bcbc;
+    }
+
+    #icoOpen{
+        height: 30px;
+        width: 30px;
+    }
+}
+    
+@media screen and (min-device-width : 481px) and (max-device-width : 767px) {
+
+    #logo{
+        width: 60px; 
+    }
+
+    #logo_a{
+        z-index: 1;
+        position: absolute; 
+        top: 1%;
+        right: 0.5%;
+    }
+    
+    /* The side navigation menu */
+    .sidenav {
+        width: 0;    /* 0 width - change this with JavaScript */
+        position: absolute;    /* Stay in place */
+        z-index: 1;    /* Stay on top */
+        top: 0;
+        left: 0;
+        overflow-x: hidden;    /* Disable horizontal scroll */
+        padding-top: 50px;    /* Place content 60px from the top */
+        transition: 0.5s;    /* 0.5 second transition effect to slide in the sidenav */
+    }
+    
+    /* The navigation menu links */
+    .sidenav a {
+        padding: 8px 8px 8px 20px;
+        text-decoration: none;
+        opacity: 0.92;
+        font-size: 20px;
+        color: #c4bcbc;
+        display: block;
+        transition: 0.2s;
+    }
+    
+    /* When you mouse over the navigation links, change their color */
+    .sidenav a:hover, .offcanvas a:focus {
+        color: #fff;
+    }
+    
+    /* Position and style the close button (top right corner) */
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        opacity: 0;
+        right: 120px;
+        font-size: 20px;
+        margin-left: 50px;
+    }
+    
+    /* Style page content - use this if you want to push the page content to the 
+    right when you open the side navigation */
+    #main {
+        transition: margin-left .5s;
+        padding: 20px;
+        overflow: hidden;
+        width: 290px;
+    }
+    
+    /* Style the links inside the navigation bar */
+    .topnav a {
+        float: left;
+        display: block;
+        color: #c4bcbc;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    
+    /* Change the color of links on hover */
+    .topnav a:hover {
+        background: none;
+        color: #c4bcbc;
+    }
+    
+    /* Add a color to the active/current link */
+    .topnav a.active {
+        background: none;
+        color: #c4bcbc;
+    }
+
+    #icoOpen{
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@media screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+    body {
+        max-height: 1100px;
+    }
+
+    #logo{
+        width: 60px; 
+    }
+
+    #logo_a{
+        z-index: 1;
+        position: absolute; 
+        top: 1%;
+        right: 0.5%;
+    }
+    
+    /* The side navigation menu */
+    .sidenav {
+        width: 0;    /* 0 width - change this with JavaScript */
+        position: absolute;    /* Stay in place */
+        z-index: 1;    /* Stay on top */
+        top: 0;
+        left: 0;
+        overflow-x: hidden;    /* Disable horizontal scroll */
+        padding-top: 50px;    /* Place content 60px from the top */
+        transition: 0.5s;    /* 0.5 second transition effect to slide in the sidenav */
+    }
+    
+    /* The navigation menu links */
+    .sidenav a {
+        padding: 8px 8px 8px 20px;
+        text-decoration: none;
+        opacity: 0.92;
+        font-size: 20px;
+        color: white;
+        display: block;
+        transition: 0.2s;
+    }
+    
+    /* When you mouse over the navigation links, change their color */
+    .sidenav a:hover, .offcanvas a:focus {
+        color: #d679ed;
+    }
+    
+    /* Position and style the close button (top right corner) */
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        opacity: 0;
+        right: 120px;
+        font-size: 20px;
+        margin-left: 50px;
+    }
+    
+    /* Style page content - use this if you want to push the page content to the 
+    right when you open the side navigation */
+    #main {
+        transition: margin-left .5s;
+        padding: 20px;
+        overflow: hidden;
+        width: 290px;
+    }
+    
+    /* Style the links inside the navigation bar */
+    .topnav a {
+        float: left;
+        display: block;
+        color: #c4bcbc;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    
+    /* Change the color of links on hover */
+    .topnav a:hover {
+        background: none;
+        color: #c4bcbc;
+    }
+    
+    /* Add a color to the active/current link */
+    .topnav a.active {
+        background: none;
+        color: #c4bcbc;
+    }
+
+    #icoOpen{
+        height: 50px;
+        width: 50px;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+}
+
+@media screen and (min-device-width : 1025px) and (max-device-width : 1824px) {
+    body{
+	    width: 100%;
+    }
+
+    .header_div{
+        display: flex;
+        position: fixed;
+        align-items: center;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100px;
+    }
+
+    #logo{
+        width: 70px; 
+        animation: anim_logo 2.25s;
+        -moz-animation: anim_logo 2.25s;
+    }
+
+    #logo_a{
+        z-index: 1;
+        position: inherit; 
+        top: 2%;
+        left: 1%;
+    }
+    
+    .NavHome{
+        animation: fadein 1s;
+        -moz-animation: fadein 1s;
+        z-index: 1;
+    }
+        
+    .NavAbout{
+        animation: fadein 1.25s;
+        -moz-animation: fadein 1.25s;
+    }
+    
+    .NavProjects{
+        animation: fadein 1.5s;
+        -moz-animation: fadein 1.5s;
+    }
+    
+    .NavSkills{
+        animation: fadein 1.75s;
+        -moz-animation: fadein 1.75s;
+    }
+    
+    .NavExperience{
+        animation: fadein 2s;
+        -moz-animation: fadein 2s;
+    }
+    
+    .NavContact{
+        margin-right: 30px;
+        margin-left: -40px;
+        border-radius: 40px;
+        border: 2px solid #d679ed;
+        padding: 10px 40px 10px 20px;
+        animation: fadein 2.25s;
+        -moz-animation: fadein 2.25s;
+    }
+    
+    .NavContact:hover{
+        background-color: rgba(214, 121, 237, 0.2);
+        transition-delay: 150ms;
+    }
+
+    .NavContact:hover .RecNavContact{
+        width: 20px;
+        opacity: 1;
+        transform: translateX(5px);
+        background-color: #d679ed;
+    }
+
+    /* Mettre deux RecNavCoontact, un blanc qui s'affiche que quand NavContact n'est
+    pas :hover, l'autre quand il est :hover
+    --> à voir si cela marche */    
+
+    .RecNavContact{
+        height: 10px;
+        width: 10px;
+        background-color: white;
+        position: absolute;
+        right: 20px;
+        top: -20px;
+        border-radius: 10px;
+        animation: recNavCon 2.25s;
+        -moz-animation: recNavCon 2.25s;
+    }
+
+    .NavContact:hover + .RecNavContact{
+        width: 20px;
+        background-color: #d679ed;
+        right: 15px;
+    }
+
+    .closebtn { /* Bouton en opacité 0 sur Home*/
+        opacity: 0;
+        position: relative;
+        left: 60px;
+        top: 0;
+        z-index: 0;
+        background-color: black;
+    }
+
+    .sidenav {
+        width: 100%;
+        height: 60px;
+        position: relative;
+        top: 0;
+        opacity: .70;
+        margin-top: 40px;
+        margin-left: 10px;
+        text-align: right;
+    }
+
+    .sidenav a {
+        color: white;
+        font-family: Gill Sans, sans-serif;
+        font-weight: 700;        
+        font-size: 16px;
+        text-decoration: none;
+        margin: 25px;
+        padding-top: -10px;
+    }
+
+    .sidenav a:hover {
+        color: #d679ed;
+    }
+
+    #icoOpen{
+        background-color: red;
+        opacity: 0;
+        width: 10px;
+        height: 10px;
+        position: relative;
+        top: 0;
+        left: 50px;
+        z-index: 0;
+    }
+
+    @keyframes fadein {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes anim_logo {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes recNavCon {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+}
+
+@media screen and (min-device-width : 1825px) {
+    body{
+	    width: 100%;
+    }
+
+    .header_div{
+        display: flex;
+        position: fixed;
+        align-items: center;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100px;
+    }
+
+    #logo{
+        width: 70px; 
+        animation: anim_logo 2.25s;
+        -moz-animation: anim_logo 2.25s;
+    }
+
+    #logo_a{
+        z-index: 1;
+        position: inherit; 
+        top: 2%;
+        left: 1%;
+    }
+    
+    .NavHome{
+        animation: fadein 1s;
+        -moz-animation: fadein 1s;
+        z-index: 1;
+    }
+        
+    .NavAbout{
+        animation: fadein 1.25s;
+        -moz-animation: fadein 1.25s;
+    }
+    
+    .NavProjects{
+        animation: fadein 1.5s;
+        -moz-animation: fadein 1.5s;
+    }
+    
+    .NavSkills{
+        animation: fadein 1.75s;
+        -moz-animation: fadein 1.75s;
+    }
+    
+    .NavExperience{
+        animation: fadein 2s;
+        -moz-animation: fadein 2s;
+    }
+    
+    .NavContact{
+        margin-right: 30px;
+        margin-left: -40px;
+        border-radius: 40px;
+        border: 2px solid #d679ed;
+        padding: 10px 40px 10px 20px;
+        animation: fadein 2.25s;
+        -moz-animation: fadein 2.25s;
+    }
+    
+    .NavContact:hover{
+        background-color: rgba(214, 121, 237, 0.2);
+        transition-delay: 150ms;
+    }
+
+    .NavContact:hover .RecNavContact{
+        width: 20px;
+        opacity: 1;
+        transform: translateX(5px);
+        background-color: #d679ed;
+    }    
+
+    .RecNavContact {
+        height: 10px;
+        width: 10px;
+        background-color: white;
+        position: absolute;
+        right: 20px;
+        top: -10px;
+        border-radius: 10px;
+        animation: recNavCon 2.25s;
+        -moz-animation: recNavCon 2.25s;
+    }
+
+    .closebtn { /* Bouton en opacité 0 sur Home*/
+        opacity: 0;
+        position: relative;
+        left: 60px;
+        top: 0;
+        z-index: 0;
+        background-color: black;
+    }
+
+    .sidenav {
+        width: 100%;
+        height: 60px;
+        position: relative;
+        top: 0;
+        opacity: .70;
+        margin-top: 40px;
+        margin-left: 10px;
+        text-align: right;
+    }
+
+    .sidenav a {
+        color: white;
+        font-family: Gill Sans, sans-serif;
+        font-weight: 700;        
+        font-size: 16px;
+        text-decoration: none;
+        margin: 15px;
+        padding-top: -10px;
+    }
+
+    .sidenav a:hover {
+        color: #d679ed;
+    }
+
+    #icoOpen{
+        background-color: red;
+        opacity: 0;
+        width: 10px;
+        height: 10px;
+        position: relative;
+        top: 0;
+        left: 50px;
+        z-index: 0;
+    }
+
+    @keyframes fadein {
+        from {
+            opacity: 0;
+            margin-top: 50px;
+        }
+        to {
+            opacity: 1;
+            margin-top: 0px;
+        }
+    }
+
+    @keyframes anim_logo {
+        from {
+            opacity: 0;
+            margin-bottom: 50px;
+        }
+        to {
+            opacity: 1;
+            margin-top: 0px;
+        }
+    }
+
+    @keyframes recNavCon {
+        from {
+            opacity: 0;
+            margin-bottom: 50px;
+        }
+        to {
+            opacity: 1;
+            margin-top: 15px;
+        }
+    }
+}    
+
+/* Liste des problèmes :
+    - Ma rotation écran se passe sans rien faire à 480-482px de large
+    - 
+
+    
