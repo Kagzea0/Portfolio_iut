@@ -8,7 +8,7 @@
 #WhoIAm{
     position: relative;
     top: 12%;
-    left: 15%;
+    left: 10%;
     font-family: Gill Sans, sans-serif;
     font-size: 12pt;
     color: #d679ed;
@@ -23,7 +23,7 @@
 #Answer1{
     position: relative;
     top: 18%;
-    left: 15%;
+    left: 10%;
     font-size: 50pt;
     color: #c4bcbc;
     opacity: 0.7;
@@ -33,7 +33,7 @@
 #Answer2{
     position: relative;
     top: 26%;
-    left: 15%;
+    left: 10%;
     font-family: Gill Sans, sans-serif;
     font-size: 12pt;
     color: #c4bcbc;
@@ -53,6 +53,14 @@
     text-decoration: underline;
 }
 
+#PhotoProfil{
+    clip-path: circle(50% at center center);
+    width: 350px;
+    position: inherit;
+    top: 15%;
+    right: 5%;
+}
+
 .Start{
     text-decoration: none;
     color: #c4bcbc;
@@ -64,7 +72,7 @@
     padding: 15px 20px 15px 20px;
     position: relative;
     top: 38%;
-    left: 15%;
+    left: 10%;
     opacity: 0.7;
     animation: transi_opa 2.5s;
 }

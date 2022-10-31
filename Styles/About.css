@@ -9,40 +9,35 @@
     opacity: 0.7;
 }
 
-#EduSco{
+.About h3{
     position: absolute;
+    border: 2px solid #d679ed;
+    border-radius: 25px;
+    padding: 25px;
+}
+
+#EduSco{
     left: 5%;
     right: 55%;
     top: 20%;
-    border: 2px solid #d679ed;
-    padding: 25px;
 }
 
 #MatApp{
-    position: absolute;
     left: 5%;
     right: 55%;
     top: 50%;
-    border: 2px solid #d679ed;
-    padding: 25px;
 }
 
 #ExpFil{
-    position: absolute;
-    right: 5%;
     left: 55%;
+    right: 5%;
     top: 20%;
-    border: 2px solid #d679ed;
-    padding: 25px;
 }
 
 #Video{
-    position: absolute;
-    right: 5%;
     left: 55%;
+    right: 5%;
     top: 50%;
-    border: 2px solid #d679ed;
-    padding: 25px;
 }
 
 /*
