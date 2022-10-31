@@ -1,0 +1,8 @@
+.Professionnal{
+    position: absolute;
+    top: 300%;
+    height: 100%;
+    width: 100%;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+}

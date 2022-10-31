@@ -1,0 +1,59 @@
+.About{
+    position: absolute;
+    top: 100%;
+    height: 100%;
+    width: 100%;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    color: #c4bcbc;
+    opacity: 0.7;
+}
+
+#EduSco{
+    position: absolute;
+    left: 5%;
+    right: 55%;
+    top: 20%;
+    border: 2px solid #d679ed;
+    padding: 25px;
+}
+
+#MatApp{
+    position: absolute;
+    left: 5%;
+    right: 55%;
+    top: 50%;
+    border: 2px solid #d679ed;
+    padding: 25px;
+}
+
+#ExpFil{
+    position: absolute;
+    right: 5%;
+    left: 55%;
+    top: 20%;
+    border: 2px solid #d679ed;
+    padding: 25px;
+}
+
+#Video{
+    position: absolute;
+    right: 5%;
+    left: 55%;
+    top: 50%;
+    border: 2px solid #d679ed;
+    padding: 25px;
+}
+
+/*
+
+Pour la carte des lieux de formations
+
+<img src="zone_IDF.jpg" usemap="#image-map">
+
+<map name="image-map">
+    <area target="_blank" alt="" title="" href="https://www.iut-velizy-rambouillet.uvsq.fr/" coords="102,41,280,86" shape="rect">
+    <area target="_blank" alt="" title="" href="http://www.lyc-cdg-poissy.ac-versailles.fr/" coords="410,555,411,534,434,521,454,517,475,520,491,528,501,542,503,557,495,572,483,582,465,587,446,588,432,584,414,572" shape="poly">
+</map>
+
+*/

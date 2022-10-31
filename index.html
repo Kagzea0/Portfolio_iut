@@ -3,82 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-    <link rel="stylesheet" href="Header.css">
-    <link rel="stylesheet" href="Home.css">
-    <link rel="stylesheet" href="About.css">
-    <link rel="stylesheet" href="Projects.css">
-    <link rel="stylesheet" href="Skills.css">
-    <link rel="stylesheet" href="Experience.css">
-    <link rel="stylesheet" href="Contact.css">
-    <title>Portfolio</title>
-    <script src="index.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="Logo.png">
-    <title>Portfolio SAE</title>
+    <!-- Je fais appel à plusieurs pages de styles pour une meilleur compréhension générale-->    
+    <link rel="stylesheet" href="Styles/Header.css">
+    <link rel="stylesheet" href="Styles/Home.css">
+    <link rel="stylesheet" href="Styles/About.css">
+    <link rel="stylesheet" href="Styles/Personnal.css">
+    <link rel="stylesheet" href="Styles/Professionnal.css">
+    <link rel="stylesheet" href="Styles/Contact.css">
+    <title>Erwan Michaud--Winkler</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <header class="header_div">
-        <a href="index.html" id="logo_a"><img src="Logo.png" alt="Logo" id="logo"></a>
-        <div id="sideNavigation" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <header class="header">
+        <a href="index.html" id="logo_a"><img src="Images/Logo.png" alt="Logo" id="logo"></a>
+        <nav id="header_nav" class="header_nav">
             <a class="NavHome" href="#Home">Home</a>
             <a class="NavAbout" href="#About">About</a>
-            <a class="NavProjects" href="#Projects">Projects</a>
-            <a class="NavSkills" href="#Skills">Skills</a>
-            <a class="NavExperience" href="#Experience">Experience</a>
+            <a class="NavProjects" href="#Personnal">Personnal</a>
+            <a class="NavProfessions" href="#Professionnal">Professionnal</a>
             <a class="NavContact" href="#Contact">Contact<a class="RecNavContact"></a></a>
-        </div>       
-        <nav class="topnav">  
-            <a href="#" onclick="openNav()">
-                <svg id="icoOpen">
-                    <path d="M0,5 30,5" stroke="white" stroke-width="4"/>
-                    <path d="M0,14 25,14" stroke="white" stroke-width="4"/>
-                    <path d="M0,23 20,23" stroke="white" stroke-width="4"/>
-                </svg>
-            </a>
-        </nav>
+        </nav>       
     </header>
     <div>
+        <a></a><!--Mettre une flèche permettant de remonter jusqu'à #Home-->
         <section class="Home" id="Home">
-            <h1 id="titre_h1">Hi, my name is Erwan Michaud--Winkler</h1>
+            <h5 id="WhoIAm">Hi, my name is</h5>
+            <h1 id="Answer1">Erwan Michaud--Winkler.</h1>
+            <h5 id="Answer2">I am a 19 years old student in the 
+                <a href="https://www.iut-velizy-rambouillet.uvsq.fr/">IUT of Velizy</a> 
+                <br> and I study web development and graphic design.
+            </h5>
+            <a href="#About" class="Start">Get started</a>
         </section>
-        <section class="About" id="About">About</section>
-        <section class="Projects" id="Projects">Projects</section>
-        <section class="Skills" id="Skills">Skills</section>
-        <section class="Experience" id="Experience">Experience</section>
-        <!-- Mettre tout ce qui concerne de #Home à #Experience (dans l'ordre) -->
+        <section class="About" id="About">
+            <h3 id="EduSco">
+                Education actuelle et celle de l'année dernière
+            </h3>
+            <h3 id="MatApp">
+                Vous devez expliquer ce que vous apprenez, 
+                comment les sujets sont liés et pertinents 
+                et quelles tâches vous pouvez accomplir
+            </h3>
+            <h3 id="ExpFil">
+                Expliquez ce qu'est le MMI, qu'est-ce qu'un BUT 
+            </h3>
+            <h3 id="Video">
+                Mettre la vidéo
+            </h3>
+        </section>
+        <section class="Personnal" id="Personnal">
+            Liste SAE sem1 :
+            TkItEasy
+            Manifesto
+            Docker
+            Base de données
+            Reccueil de besoins - web
+            Presentation entreprise/ong 
+
+
+            Liste SAE sem2 :
+            GridPane - APLI
+            Prendre ONG et expliquer ce qu'elle fait (Amnesty)
+            <h3 id="Projet1">
+
+                Projet 1 : Mon site web
+            </h3>
+            <h3 id="Projet2">
+                Projet 2 : APLI (mettre lien github)
+            </h3>
+            <h3 id="Projet3">
+                Projet 3 :
+            </h3>
+            <h3 id="Projet4">
+                Projet 4 :
+            </h3>
+        </section>
+        <section class="Professionnal" id="Professionnal">Professionnal</section>
     </div>
-    <footer>
+    <footer class="Contact" id="Contact">Contact
         <!-- Mettre #Contact (RS-mail-Nom/Prenom) 
         Bande de ~100/150px positionnée en relative??? -->
     </footer>
 </body>
-    
-    <section class="Home" id="Home">
-        <h1>Hello</h1>
-        <!--
-            Page 1 = qui je suis et qcq je fais
-            Séparer la 2ème page en deux : 
-                - Partie de gauche = photo 
-                - Partie de droite = présentation rapide en anglais
-                (expériences personnelles et stages)
-                (pour plus de détails, mettre le lien de la vidéo en anglais)
-            Page 3 :
-                - Présentation de nos travaux personnels via des photos
-                - Et de nos compétences
-            Page 4 :
-                - Mettre les futurs jobs possibles
-                    - Dev front-end
-                    - Dev Full-Stack
-                    - Un métier de l'audiovisuel ()
-                    - Un métier de l'audiovisuel (un autre)
-        -->
-    </section>
-    <section class="About" id="About">About</section>
-    <section class="Projects" id="Projects">Projects</section>
-    <section class="Skills" id="Skills">Skills</section>
-    <section class="Experience" id="Experience">Experience</section>
+
+    <!--
+        Page 1 = qui je suis et qcq je fais
+        Séparer la 2ème page en deux : 
+            - Partie de gauche = photo 
+            - Partie de droite = présentation rapide en anglais
+            (expériences personnelles et stages)
+            (pour plus de détails, mettre le lien de la vidéo en anglais)
+        Page 3 :
+            - Présentation de nos travaux personnels via des photos
+            - Et de nos compétences
+        Page 4 :
+            - Mettre les futurs jobs possibles
+                - Dev front-end
+                - Dev Full-Stack
+                - Un métier de l'audiovisuel ()
+                - Un métier de l'audiovisuel (un autre)
+    -->
 
     <!--Mettre des photos pour décrire les difs travaux effectués
     Qq mots sur votre expérience perso/scolaire et comment elle est liée à 
@@ -91,7 +116,6 @@
     Idées images : 
     - Jeu mario
     - TD/TP dev web
-
 -->
 </body>
 </html>
