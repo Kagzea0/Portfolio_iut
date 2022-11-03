@@ -59,6 +59,7 @@
     position: inherit;
     top: 15%;
     right: 5%;
+    animation: transi_opa 2.5s;
 }
 
 .Start{

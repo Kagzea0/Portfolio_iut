@@ -3,52 +3,61 @@
     top: 100%;
     height: 100%;
     width: 100%;
-    border-bottom: 1px solid white;
-    border-top: 1px solid white;
     color: #c4bcbc;
-    opacity: 0.7;
+    opacity: 0.7;    
+    line-height: 160%;
 }
 
 .About h3{
     position: absolute;
-    border: 2px solid #d679ed;
     border-radius: 25px;
     padding: 25px;
+    background-color: #121739;
+    border: none;
+    transition-duration: 250ms;
+}
+
+.About h3:hover{
+    transition-duration: 250ms;
+    box-shadow: 0px 0px 10px 2.5px #121739;
 }
 
 #EduSco{
-    left: 5%;
-    right: 55%;
-    top: 20%;
+    inset: 5% 52% 50% 2%;
+}
+
+#EduSco:hover{
+    inset: 4.5% 52% 50.5% 2%;
 }
 
 #MatApp{
-    left: 5%;
-    right: 55%;
-    top: 50%;
+    inset: 55% 52% 5% 2%;
+}
+
+#MatApp:hover{
+    inset: 54.5% 52% 4.5% 2%;
 }
 
 #ExpFil{
-    left: 55%;
-    right: 5%;
-    top: 20%;
+    inset: 5% 2% 50% 52%;
+}
+
+#ExpFil:hover{
+    inset: 4.5% 2% 50.5% 52%;
 }
 
 #Video{
-    left: 55%;
-    right: 5%;
-    top: 50%;
+    inset: 55% 2% 5% 52%;
 }
 
-/*
+#Video:hover{
+    inset: 54.5% 2% 5.5% 52%;
+}
 
-Pour la carte des lieux de formations
 
-<img src="zone_IDF.jpg" usemap="#image-map">
-
-<map name="image-map">
-    <area target="_blank" alt="" title="" href="https://www.iut-velizy-rambouillet.uvsq.fr/" coords="102,41,280,86" shape="rect">
-    <area target="_blank" alt="" title="" href="http://www.lyc-cdg-poissy.ac-versailles.fr/" coords="410,555,411,534,434,521,454,517,475,520,491,528,501,542,503,557,495,572,483,582,465,587,446,588,432,584,414,572" shape="poly">
-</map>
-
-*/
+#img_map{
+    float: right;
+    position: inherit;
+    top: 20px;
+    left: 275px;
+}
