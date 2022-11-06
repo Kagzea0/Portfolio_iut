@@ -4,6 +4,7 @@
     height: 100%;
     width: 100%;
     color: #c4bcbc;
+    border-top: 1px solid white;
     opacity: 0.7;    
     line-height: 160%;
 }
@@ -54,10 +55,15 @@
     inset: 54.5% 2% 5.5% 52%;
 }
 
-
 #img_map{
     float: right;
     position: inherit;
     top: 20px;
     left: 275px;
+}
+
+#video_fu{
+    width: 450px;
+    position: absolute;
+    left: 17.5%;
 }

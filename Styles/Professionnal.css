@@ -3,8 +3,6 @@
     top: 300%;
     height: 100%;
     width: 100%;
-    border-bottom: 1px solid white;
-    border-top: 1px solid white;
     color: #c4bcbc;
     opacity: 0.7;
 }
@@ -14,28 +12,21 @@
     border: 2px solid #d679ed;
     border-radius: 25px;
     padding: 25px;
+    font-size: 16px;
 }
 
 #Metier1{
-    left: 5%;
-    right: 55%;
-    top: 20%;
+    inset: 5% 51.25% 52.5% 2%;
 }
 
 #Metier2{
-    left: 5%;
-    right: 55%;
-    top: 50%;
+    inset: 52.5% 51.25% 5% 2%;
 }
 
 #Metier3{
-    left: 55%;
-    right: 5%;
-    top: 20%;
+    inset: 5% 2% 52.5% 51.25%;
 }
 
 #Metier4{
-    left: 55%;
-    right: 5%;
-    top: 50%;
+    inset: 52.5% 2% 5% 51.25%;
 }
