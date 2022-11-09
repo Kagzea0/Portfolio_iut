@@ -12,7 +12,6 @@
     font-family: Gill Sans, sans-serif;
     font-size: 12pt;
     color: #d679ed;
-    opacity: 0.7;
     filter: brightness(0.8);   
     animation: transi_opa 2.25s;
 }
@@ -26,7 +25,6 @@
     left: 10%;
     font-size: 50pt;
     color: #c4bcbc;
-    opacity: 0.7;
     animation: transi_opa 2s;
 }
 
@@ -37,7 +35,6 @@
     font-family: Gill Sans, sans-serif;
     font-size: 12pt;
     color: #c4bcbc;
-    opacity: 0.7;
     inline-size: 400px;
     line-height: 160%;
     animation: transi_opa 2.25s;
@@ -74,7 +71,6 @@
     position: relative;
     top: 38%;
     left: 10%;
-    opacity: 0.7;
     animation: transi_opa 2.5s;
 }
 
@@ -93,7 +89,6 @@
     width: 10px;
     z-index: 10;
     background-color: red;
-    opacity: 0.7;
     position: inherit;
     left: 27.75%;
     top: 61.75%;
