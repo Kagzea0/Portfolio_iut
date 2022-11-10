@@ -11,20 +11,17 @@
     left: 10%;
     font-family: Gill Sans, sans-serif;
     font-size: 12pt;
-    color: #d679ed;
+    color: #d679ed; /*Couleur du texte*/
     filter: brightness(0.8);   
     animation: transi_opa 2.25s;
 }
-
-#WhoIAm::after{
-    color: #d679ed;}
 
 #Answer1{
     position: relative;
     top: 18%;
     left: 10%;
     font-size: 50pt;
-    color: #c4bcbc;
+    color: #c4bcbc; /*Couleur du texte*/
     animation: transi_opa 2s;
 }
 
@@ -34,14 +31,14 @@
     left: 10%;
     font-family: Gill Sans, sans-serif;
     font-size: 12pt;
-    color: #c4bcbc;
+    color: #c4bcbc; /*Couleur du texte*/
     inline-size: 400px;
     line-height: 160%;
     animation: transi_opa 2.25s;
 }
 
 #Answer2 a{
-    color: #d679ed;
+    color: #d679ed; /*Couleur du texte*/
     text-decoration: none;
     filter: brightness(0.8);
 }
@@ -61,7 +58,7 @@
 
 .Start{
     text-decoration: none;
-    color: #c4bcbc;
+    color: #c4bcbc; /*Couleur du texte*/
     font-family: Gill Sans, sans-serif;
     font-size: 12pt;
     font-weight: bold;
@@ -77,21 +74,5 @@
 .Start:hover{
     background-color: rgba(214, 121, 237, 0.2);
     transition-delay: 150ms;
-    color: #d679ed;
-}
-
-.Start:hover + .RecHomeStart{
-    background-color: #d679ed;
-} 
-
-.RecHomeStart{
-    height: 10px;
-    width: 10px;
-    z-index: 10;
-    background-color: red;
-    position: inherit;
-    left: 27.75%;
-    top: 61.75%;
-    border-radius: 10px;
-    animation: transi_opa 2.5s;
+    color: #d679ed; /*Couleur du texte quand il est survolé*/
 }
