@@ -90,7 +90,6 @@ body {
     font-size: 16px; /*Police de taille 16px*/
     text-decoration: none; /*Pas de décoration de texte*/
     margin: 25px; /*Marge extérieur de 25px*/
-    padding-top: -10px; /*Marge intérieur de -10px en haut*/
 }
 
 .header_nav a:hover {
@@ -212,35 +211,35 @@ body {
     box-shadow: 0px 0px 10px 2.5px #121739;
 }
 
-#EduSco{
+#Zone1-1_CV{
     inset: 5% 52% 50% 2%; /*Positionné à 5% du haut, 52% de la droite, 50% du bas et 2% de la gauche*/
 }
 
-#EduSco:hover{
+#Zone1-1_CV:hover{
     inset: 4.5% 52% 50.5% 2%; /*Positionné à 4.5% du haut, 52% de la droite, 50.5% du bas et 2% de la gauche*/
 }
 
-#MatApp{
+#Zone1-2_CV{
     inset: 55% 52% 5% 2%; /*Positionné à 55% du haut, 52% de la droite, 5% du bas et 2% de la gauche*/
 }
 
-#MatApp:hover{
+#Zone1-2_CV:hover{
     inset: 54.5% 52% 4.5% 2%; /*Positionné à 54.5% du haut, 52% de la droite, 4.5% du bas et 2% de la gauche*/
 }
 
-#ExpFil{
+#Zone1-3_CV{
     inset: 5% 2% 50% 52%; /*Positionné à 5% du haut, 2% de la droite, 50% du bas et 52% de la gauche*/ 
 }
 
-#ExpFil:hover{
+#Zone1-3_CV:hover{
     inset: 4.5% 2% 50.5% 52%; /*Positionné à 4.5% du haut, 2% de la droite, 50.5% du bas et 52% de la gauche*/
 }
 
-#Video{
+#Zone1-4_Video{
     inset: 55% 2% 5% 52%; /*Positionné à 55% du haut, 2% de la droite, 5% du bas et 52% de la gauche*/
 }
 
-#Video:hover{
+#Zone1-4_CV_Video:hover{
     inset: 54.5% 2% 5.5% 52%; /*Positionné à 54.5% du haut, 2% de la droite, 5.5% du bas et 52% de la gauche*/
 }
 
@@ -263,33 +262,61 @@ body {
 
 .Personnal h3{
     position: absolute;
-    border: 2px solid #d679ed; /*Crée une bordure de 2px, solid et de cette couleur pour tous les éléments ayant cette classe*/
     border-radius: 25px; /*Coin de la bordure avec un arrondi de rayon de 25px*/
     padding: 25px; /*Marge intérieure de 25px*/
+    background-color: #121739; /*Couleur de fond de l'élément*/
+    border: none; /*Pas de bordure*/
+    transition-duration: 250ms; /*Transition avec une durée de 250ms*/
 }
 
-#Projet1{
-    left: 5%; /*Positionné à 5% de la gauche*/
-    right: 55%; /*Positionné à 55% de la droite*/
-    top: 20%; /*Positionné à 20% du haut*/
+.Personnal h3:hover{
+    transition-duration: 250ms; /*Transition avec une durée de 250ms*/
+    box-shadow: 0px 0px 10px 2.5px #121739;
 }
 
-#Projet2{
-    left: 5%; /*Positionné à 5% de la gauche*/
-    right: 55%; /*Positionné à 55% de la droite*/
-    top: 50%; /*Positionné à 50% du haut*/
+#Projet1{ inset: 5% 52% 50% 2%; /*Positionné à 5% du haut, 52% de la droite, 50% du bas et 2% de la gauche*/}
+
+#Projet1:hover{ inset: 4.5% 52% 50.5% 2%; /*Positionné à 4.5% du haut, 52% de la droite, 50.5% du bas et 2% de la gauche*/}
+
+#Projet2{ inset: 55% 52% 5% 2%; /*Positionné à 55% du haut, 52% de la droite, 5% du bas et 2% de la gauche*/}
+
+#Projet2:hover{ inset: 54.5% 52% 4.5% 2%; /*Positionné à 54.5% du haut, 52% de la droite, 4.5% du bas et 2% de la gauche*/}
+
+#Zone2_CV{ inset: 5% 2% 50% 52%; /*Positionné à 5% du haut, 2% de la droite, 50% du bas et 52% de la gauche*/ }
+
+#Zone2_CV:hover{ inset: 4.5% 2% 50.5% 52%; /*Positionné à 4.5% du haut, 2% de la droite, 50.5% du bas et 52% de la gauche*/}
+
+#Comp_trav-perso{ inset: 55% 2% 5% 52%; /*Positionné à 55% du haut, 2% de la droite, 5% du bas et 52% de la gauche*/}
+
+#Comp_trav-perso:hover{ inset: 54.5% 2% 5.5% 52%; /*Positionné à 54.5% du haut, 2% de la droite, 5.5% du bas et 52% de la gauche*/}
+
+.Zone2_CV img{
+    display: block;
+    margin: 5px;
 }
 
-#Logiciels{
-    left: 55%; /*Positionné à 55% de la gauche*/
-    right: 5%; /*Positionné à 5% de la droite*/
-    top: 20%; /*Positionné à 20% du haut*/
+.Zone2_CV_Container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-#Projet4{
-    left: 55%; /*Positionné à 55% de la gauche*/
-    right: 5%; /*Positionné à 5% de la droite*/
-    top: 50%; /*Positionné à 50% du haut*/
+.Zone2_CV_Container img{
+    display: block;
+    margin: 5px;
+    margin-right: 10px;
+}
+
+.Comp_container img{
+    width: 10%;
+    display: block;
+    margin-right: 10px;
+}
+
+.Comp_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 /*SECTION PROFESSIONNAL*/
@@ -304,39 +331,92 @@ body {
 
 .Professionnal h3{
     position: absolute;
-    border: 2px solid #d679ed; /*Crée une bordure de 2px, solid et de cette couleur pour tous les éléments ayant cette classe*/
     border-radius: 25px; /*Coin de la bordure avec un arrondi de rayon de 25px*/
     padding: 25px; /*Marge intérieure de 25px*/
-    font-size: 16px; /*Taille de police*/
+    background-color: #121739; /*Couleur de fond de l'élément*/
+    border: none; /*Pas de bordure*/
+    transition-duration: 250ms; /*Transition avec une durée de 250ms*/
+    font-size: 16px;
+}
+
+.Professionnal h3:hover{
+    transition-duration: 250ms; /*Transition avec une durée de 250ms*/
+    box-shadow: 0px 0px 10px 2.5px #121739;
 }
 
 #Metier1{
-    inset: 5% 51.25% 52.5% 2%; /*Positionné à 5% du haut, 51.25% de la droite, 52.5% du bas et 2% de la gauche*/
+    inset: 5% 52% 50% 2%; /*Positionné à 5% du haut, 52% de la droite, 50% du bas et 2% de la gauche*/
+}
+
+#Metier1:hover{
+    inset: 4.5% 52% 50.5% 2%; /*Positionné à 4.5% du haut, 52% de la droite, 50.5% du bas et 2% de la gauche*/
 }
 
 #Metier2{
-    inset: 5% 2% 52.5% 51.25%; /*Positionné à 5% du haut, 2% de la droite, 52.5% du bas et 51.25% de la gauche*/
+    inset: 5% 2% 50% 52%; /*Positionné à 5% du haut, 2% de la droite, 50% du bas et 52% de la gauche*/ 
+}
+
+#Metier2:hover{
+    inset: 4.5% 2% 50.5% 52%; /*Positionné à 4.5% du haut, 2% de la droite, 50.5% du bas et 52% de la gauche*/
 }
 
 #Metier3{
-    inset: 52.5% 51.25% 5% 2%; /*Positionné à 52.5% du haut, 51.25% de la droite, 5% du bas et 2% de la gauche*/
+    inset: 55% 52% 5% 2%; /*Positionné à 55% du haut, 52% de la droite, 5% du bas et 2% de la gauche*/
 }
 
-#Metier4{
-    inset: 52.5% 2% 5% 51.25%; /*Positionné à 52.5% du haut, 2% de la droite, 5% du bas et 51.25% de la gauche*/
+#Metier3:hover{
+    inset: 54.5% 52% 4.5% 2%; /*Positionné à 54.5% du haut, 52% de la droite, 4.5% du bas et 2% de la gauche*/
 }
 
-/*SECTION CONTACT*/
+#Zone3_CV{
+    inset: 55% 2% 5% 52%; /*Positionné à 55% du haut, 2% de la droite, 5% du bas et 52% de la gauche*/
+}
 
-.Contact{
+#Zone3_CV:hover{
+    inset: 54.5% 2% 5.5% 52%; /*Positionné à 54.5% du haut, 2% de la droite, 5.5% du bas et 52% de la gauche*/
+}
+
+/*SECTION FOOTER*/
+
+.Footer{
     position: absolute;
     top: 400%; /*Positionné à 400% du haut*/
     height: 10%; /*Hauteur de 100%*/
     width: 100%; /*Largeur de 100%*/
     color: #c4bcbc; /*Couleur du texte*/
+    border-top: white solid 2px;
 }
 
-#ttest{
+#W3C_css{
     position: absolute;
-    inset: 30% 20% 30% 40%; /*Positionné à 30% du haut, 20% de la droite, 30% du bas et 40% de la gauche*/
+    top: 20px;
+    left: 20px;
+}
+
+#github_logo{
+    position: absolute;
+    top: 10px;
+    left: 700px;
+}
+
+#linkedin_logo{
+    position: absolute;
+    top: 8px;
+    left: 750px;
+}
+
+#mail{
+    position: absolute;
+    right: 25px;
+    top: 25px;
+}
+
+/*PAGE CONTACT*/
+
+.Contact{
+    background-color: #0c102c;
+}
+
+#form{
+    color: white;
 }
