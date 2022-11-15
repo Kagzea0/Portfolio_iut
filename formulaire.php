@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <?php print "Merci pour votre message ";
-    print $_POST["nom"] ;
-    print " ";
-    print $_POST["prenom"];
-    ?>
-</body>
-</html>
+<html>
+  <head>
+  <title>rÃ©ponse du serveur</title>
+  </head>
+  <body>
+    
+  <?php print "Merci pour votre message ";
+  print $_POST["nom"] ;
+  print " ";
+  print $_POST["prenom"];
+  ?>
+    <p><a href='index.html'> Go back to the homepage</a></p>
+  </body>
+</html> 
