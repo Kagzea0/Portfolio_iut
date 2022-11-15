@@ -31,9 +31,15 @@
 
         <!-- Case à cocher -->
         <input type="checkbox" name="bDebutant" checked="checked" /> Je débute en PHP<br/><br/>
-        
+
         <!-- Bouton -->
         <input type="submit" name="btOK" value="OK">
+
+        <?php print "Merci pour votre message ";
+        print $_POST["nom"] ;
+        print " ";
+        print $_POST["prenom"];
+        ?>
     </form>
 </body>
 </html>
