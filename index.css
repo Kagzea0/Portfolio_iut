@@ -15,7 +15,7 @@ html, body{
 
 body {
     height: 100vh; /*Hauteur de 100vh*/
-    background-color: #0c102c; /*Couleur de fond de l'élément*/
+    background-color: #222436; /*Couleur de fond de l'élément*/
     width: 100%; /*Largeur de 100%*/
 }
 
@@ -32,9 +32,6 @@ body {
 #logo{
     width: 70px; /*Hauteur de 70px*/
     animation: transi_opa 2.25s; /*Transition de 2.25s à partir de la keyframes transi_opa*/
-}
-
-#logo_a{
     position: absolute; 
     top: 20%; /*Positionné à 20% du haut*/
     left: 1%; /*Positionné à 1% de la gauche*/
@@ -418,17 +415,36 @@ body {
     background-color: #0c102c;
 }
 
+.Home_Contact{
+    color: #c4bcbc; /*Couleur du texte*/
+    font-family: Gill Sans, sans-serif; /*Police*/
+    font-weight: 900; /*Gras de 700/1000*/  
+    font-size: 30px; /*Police de taille 30px*/
+    text-decoration: underline #d679ed; /*Pas de décoration de texte*/
+    margin: 25px; /*Marge extérieur de 25px*/
+    display: flex;
+    justify-content: center;
+}
+
 #formulaire{
     letter-spacing: 1px;
     font-size: xx-large;
     border: #d679ed 2px solid;
     padding: 15px;
     border-radius: 15px;
-    color: white;
+    color: #c4bcbc;
     position: absolute;
     inset: 30% 40% 30% 40%;
+    text-align: center;
+    padding-bottom: 22.5%;
 }
 
 button {
     font-size: x-large;
+}
+
+#p_form{
+    display: flex;
+    justify-content: center;
+    vertical-align:sub;
 }

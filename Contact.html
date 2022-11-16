@@ -8,14 +8,19 @@
     <title>Contact</title>
 </head>
 <body>
+    <header>
+        <nav id="Nav_Contact">
+            <a class="Home_Contact" href="index.html">Home</a>
+        </nav>       
+    </header>
     <p class="Contact"></p>
 
     <form method='post'action="formulaire.php" id="formulaire">
-        <div class="info">
+        <div id="info">
             <p>First Name</p><input type="text" name="prenom">
             <p>Last Name</p><input type="text" name="nom">
         </div>
-        <div >
+        <div id="message">
             <p>Message</p><input class="message" type="text" name="comm"></br></br>
             <button type ='submit'>Submit</button>
             <button type="reset">Reset</button>
