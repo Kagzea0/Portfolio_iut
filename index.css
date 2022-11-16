@@ -282,11 +282,17 @@ body {
 
 #Projet2:hover{ inset: 54.5% 52% 4.5% 2%; /*Positionné à 54.5% du haut, 52% de la droite, 4.5% du bas et 2% de la gauche*/}
 
-#Zone2_CV{ inset: 5% 2% 50% 52%; /*Positionné à 5% du haut, 2% de la droite, 50% du bas et 52% de la gauche*/ }
+#Zone2_CV{ 
+    inset: 5% 2% 50% 52%; /*Positionné à 5% du haut, 2% de la droite, 50% du bas et 52% de la gauche*/ 
+    padding-top: 10px;
+}
 
 #Zone2_CV:hover{ inset: 4.5% 2% 50.5% 52%; /*Positionné à 4.5% du haut, 2% de la droite, 50.5% du bas et 52% de la gauche*/}
 
-#Comp_trav-perso{ inset: 55% 2% 5% 52%; /*Positionné à 55% du haut, 2% de la droite, 5% du bas et 52% de la gauche*/}
+#Comp_trav-perso{ 
+    inset: 55% 2% 5% 52%; /*Positionné à 55% du haut, 2% de la droite, 5% du bas et 52% de la gauche*/
+    padding-top: 2px;
+}
 
 #Comp_trav-perso:hover{ inset: 54.5% 2% 5.5% 52%; /*Positionné à 54.5% du haut, 2% de la droite, 5.5% du bas et 52% de la gauche*/}
 
@@ -303,7 +309,7 @@ body {
 
 .Zone2_CV_Container img{
     display: block;
-    margin: 5px;
+    margin: 7px;
     margin-right: 10px;
 }
 
@@ -311,6 +317,7 @@ body {
     width: 10%;
     display: block;
     margin-right: 10px;
+    margin-top: 7px;
 }
 
 .Comp_container{
