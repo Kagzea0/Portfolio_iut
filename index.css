@@ -118,7 +118,6 @@ body {
     font-family: Gill Sans, sans-serif; /*Police*/
     font-size: 12pt; /*Taille de police*/
     color: #d679ed; /*Couleur du texte*/
-    filter: brightness(0.8);   
     animation: transi_opa 2.25s; /*Transition de 2.25s à partir de la keyframes transi_opa*/
 }
 
@@ -145,7 +144,6 @@ body {
 #Answer2 a{
     color: #d679ed; /*Couleur du texte*/
     text-decoration: none; /*Pas de décoration de texte*/
-    filter: brightness(0.8);
 }
 
 #Answer2 a:hover{
@@ -153,7 +151,7 @@ body {
 }
 
 #PhotoProfil{
-    clip-path: circle(50% at center center);
+    clip-path: circle(50% at center center); /*Cercle à partir du centre de l'image pour qu'elle soir ronde*/
     width: 350px; /*Hauteur de 350px*/
     position: inherit;
     top: 15%; /*Positionné à 15% du haut*/
@@ -190,7 +188,6 @@ body {
     height: 100%; /*Hauteur de 100%*/
     width: 100%; /*Largeur de 100%*/
     color: #c4bcbc; /*Couleur du texte*/
-    border-top: 1px solid white; 
     line-height: 160%; /*Taille de l'interligne*/
 }
 
@@ -208,37 +205,13 @@ body {
     box-shadow: 0px 0px 10px 2.5px #121739;
 }
 
-#Zone1-1_CV{
-    inset: 5% 52% 50% 2%; /*Positionné à 5% du haut, 52% de la droite, 50% du bas et 2% de la gauche*/
-}
+#Zone1-1_CV{ inset: 5% 52% 50% 2%; /*Positionné à 5% du haut, 52% de la droite, 50% du bas et 2% de la gauche*/}
 
-#Zone1-1_CV:hover{
-    inset: 4.5% 52% 50.5% 2%; /*Positionné à 4.5% du haut, 52% de la droite, 50.5% du bas et 2% de la gauche*/
-}
+#Zone1-2_CV{ inset: 55% 52% 5% 2%; /*Positionné à 55% du haut, 52% de la droite, 5% du bas et 2% de la gauche*/}
 
-#Zone1-2_CV{
-    inset: 55% 52% 5% 2%; /*Positionné à 55% du haut, 52% de la droite, 5% du bas et 2% de la gauche*/
-}
+#Zone1-3_CV{ inset: 5% 2% 50% 52%; /*Positionné à 5% du haut, 2% de la droite, 50% du bas et 52% de la gauche*/ }
 
-#Zone1-2_CV:hover{
-    inset: 54.5% 52% 4.5% 2%; /*Positionné à 54.5% du haut, 52% de la droite, 4.5% du bas et 2% de la gauche*/
-}
-
-#Zone1-3_CV{
-    inset: 5% 2% 50% 52%; /*Positionné à 5% du haut, 2% de la droite, 50% du bas et 52% de la gauche*/ 
-}
-
-#Zone1-3_CV:hover{
-    inset: 4.5% 2% 50.5% 52%; /*Positionné à 4.5% du haut, 2% de la droite, 50.5% du bas et 52% de la gauche*/
-}
-
-#Zone1-4_Video{
-    inset: 55% 2% 5% 52%; /*Positionné à 55% du haut, 2% de la droite, 5% du bas et 52% de la gauche*/
-}
-
-#Zone1-4_CV_Video:hover{
-    inset: 54.5% 2% 5.5% 52%; /*Positionné à 54.5% du haut, 2% de la droite, 5.5% du bas et 52% de la gauche*/
-}
+#Zone1-4_Video{ inset: 55% 2% 5% 52%; /*Positionné à 55% du haut, 2% de la droite, 5% du bas et 52% de la gauche*/}
 
 #img_map{
     float: right;
@@ -247,9 +220,9 @@ body {
     left: 275px; /*Positionné à 275px de la gauche*/
 }
 
-/*SECTION PERSONNAL*/ 
+/*SECTION PERSONAL*/ 
 
-.Personnal{
+.Personal{
     position: absolute;
     top: 200%; /*Positionné à 200% du haut*/
     height: 100%; /*Hauteur de 100%*/
@@ -257,75 +230,147 @@ body {
     color: #c4bcbc; /*Couleur du texte*/
 }
 
-.Personnal h3{
+.Personal h3{
     position: absolute;
     border-radius: 25px; /*Coin de la bordure avec un arrondi de rayon de 25px*/
     padding: 25px; /*Marge intérieure de 25px*/
-    background-color: #121739; /*Couleur de fond de l'élément*/
-    border: none; /*Pas de bordure*/
+    border: #d679ed solid 2px; /*Pas de bordure*/
     transition-duration: 250ms; /*Transition avec une durée de 250ms*/
 }
 
-.Personnal h3:hover{
-    transition-duration: 250ms; /*Transition avec une durée de 250ms*/
-    box-shadow: 0px 0px 10px 2.5px #121739;
+.Personal h3:hover{ transition-duration: 250ms; /*Transition avec une durée de 250ms*/}
+
+#Projet1{ inset: 5% 52% 55% 2%; /*Positionné à 5% du haut, 52% de la droite, 50% du bas et 2% de la gauche*/}
+
+#Projet1 p{
+    width: 40%;
+    font-size: 20px;
 }
 
-#Projet1{ inset: 5% 52% 50% 2%; /*Positionné à 5% du haut, 52% de la droite, 50% du bas et 2% de la gauche*/}
-
-#Projet1:hover{ inset: 4.5% 52% 50.5% 2%; /*Positionné à 4.5% du haut, 52% de la droite, 50.5% du bas et 2% de la gauche*/}
-
-#Projet2{ inset: 55% 52% 5% 2%; /*Positionné à 55% du haut, 52% de la droite, 5% du bas et 2% de la gauche*/}
-
-#Projet2:hover{ inset: 54.5% 52% 4.5% 2%; /*Positionné à 54.5% du haut, 52% de la droite, 4.5% du bas et 2% de la gauche*/}
-
-#Zone2_CV{ 
-    inset: 5% 2% 50% 52%; /*Positionné à 5% du haut, 2% de la droite, 50% du bas et 52% de la gauche*/ 
-    padding-top: 10px;
+#Projet1 video{
+    float: right;
+    position: relative;
+    top: -220px;
+    right: -15px;
 }
 
-#Zone2_CV:hover{ inset: 4.5% 2% 50.5% 52%; /*Positionné à 4.5% du haut, 2% de la droite, 50.5% du bas et 52% de la gauche*/}
-
-#Comp_trav-perso{ 
-    inset: 55% 2% 5% 52%; /*Positionné à 55% du haut, 2% de la droite, 5% du bas et 52% de la gauche*/
-    padding-top: 2px;
+#Projet1 #video_python{
+    position: relative;
+    right: -320px;
+    text-decoration: none;
+    color: #c4bcbc;
 }
 
-#Comp_trav-perso:hover{ inset: 54.5% 2% 5.5% 52%; /*Positionné à 54.5% du haut, 2% de la droite, 5.5% du bas et 52% de la gauche*/}
+#Projet1 a{
+    text-decoration: none;
+    color: #c4bcbc;
+}
 
-.Zone2_CV img{
+#Projet2{ inset: 50% 52% 5% 2%; /*Positionné à 55% du haut, 52% de la droite, 5% du bas et 2% de la gauche*/}
+
+#Projet2 p{
+    width: 55%;
+    font-size: 20px;
+}
+
+#Projet2 img{
+    float: right;
+    position: relative;
+    top: -90%;
+}
+
+#Projet2 a{
+    text-decoration: none;
+    color: #c4bcbc;
+}
+
+#DevSoft{ 
+    inset: 5% 2% 52.5% 52%; /*Positionné à 5% du haut, 2% de la droite, 50% du bas et 52% de la gauche*/ 
+    padding-top: 0;
+}
+
+.DevSoft img{
     display: block;
     margin: 5px;
 }
 
-.Zone2_CV_Container{
+.DevSoft1{
+    margin-top: 10%;
+}
+
+.DevSoft2{
+    margin-top: -24%;
+}
+
+.DevSoft1_Cont{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.Zone2_CV_Container img{
-    display: block;
+.DevSoft1_Cont img{
     margin: 7px;
+    margin-left: 10%;
     margin-right: 10px;
 }
 
-.Comp_container img{
-    width: 10%;
-    display: block;
-    margin-right: 10px;
-    margin-top: 7px;
-}
-
-.Comp_container{
+.DevSoft2_Cont{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-/*SECTION PROFESSIONNAL*/
+.DevSoft2_Cont img{
+    margin: 7px;
+    margin-left: 65%;
+    margin-right: 15px;
+}
 
-.Professionnal{
+#GraSoft{ 
+    inset: 52.5% 2% 5% 52%; /*Positionné à 55% du haut, 2% de la droite, 5% du bas et 52% de la gauche*/
+    padding-top: 0;
+}
+
+.GraSoft img{
+    display: block;
+    margin: 5px;
+}
+
+.GraSoft1{
+    margin-top: 10%;
+}
+
+.GraSoft2{
+    margin-top: -24%;
+}
+
+.GraSoft1_Cont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.GraSoft1_Cont img{
+    margin: 7px;
+    margin-left: 10%;
+    margin-right: 10px;
+}
+
+.GraSoft2_Cont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.GraSoft2_Cont img{
+    margin: 7px;
+    margin-left: 65%;
+    margin-right: 15px;
+}
+
+/*SECTION PROFESSIONAL*/
+
+.Professional{
     position: absolute;
     top: 300%; /*Positionné à 300% du haut*/ 
     height: 100%; /*Hauteur de 100%*/
@@ -333,7 +378,7 @@ body {
     color: #c4bcbc; /*Couleur du texte*/
 }
 
-.Professionnal h3{
+.Professional h3{
     position: absolute;
     border-radius: 25px; /*Coin de la bordure avec un arrondi de rayon de 25px*/
     padding: 25px; /*Marge intérieure de 25px*/
@@ -343,42 +388,18 @@ body {
     font-size: 16px;
 }
 
-.Professionnal h3:hover{
+.Professional h3:hover{
     transition-duration: 250ms; /*Transition avec une durée de 250ms*/
     box-shadow: 0px 0px 10px 2.5px #121739;
 }
 
-#Metier1{
-    inset: 5% 52% 50% 2%; /*Positionné à 5% du haut, 52% de la droite, 50% du bas et 2% de la gauche*/
-}
+#Metier1{ inset: 5% 52% 50% 2%; /*Positionné à 5% du haut, 52% de la droite, 50% du bas et 2% de la gauche*/}
 
-#Metier1:hover{
-    inset: 4.5% 52% 50.5% 2%; /*Positionné à 4.5% du haut, 52% de la droite, 50.5% du bas et 2% de la gauche*/
-}
+#Metier2{ inset: 5% 2% 50% 52%; /*Positionné à 5% du haut, 2% de la droite, 50% du bas et 52% de la gauche*/}
 
-#Metier2{
-    inset: 5% 2% 50% 52%; /*Positionné à 5% du haut, 2% de la droite, 50% du bas et 52% de la gauche*/ 
-}
+#Metier3{ inset: 55% 52% 5% 2%; /*Positionné à 55% du haut, 52% de la droite, 5% du bas et 2% de la gauche*/}
 
-#Metier2:hover{
-    inset: 4.5% 2% 50.5% 52%; /*Positionné à 4.5% du haut, 2% de la droite, 50.5% du bas et 52% de la gauche*/
-}
-
-#Metier3{
-    inset: 55% 52% 5% 2%; /*Positionné à 55% du haut, 52% de la droite, 5% du bas et 2% de la gauche*/
-}
-
-#Metier3:hover{
-    inset: 54.5% 52% 4.5% 2%; /*Positionné à 54.5% du haut, 52% de la droite, 4.5% du bas et 2% de la gauche*/
-}
-
-#Zone3_CV{
-    inset: 55% 2% 5% 52%; /*Positionné à 55% du haut, 2% de la droite, 5% du bas et 52% de la gauche*/
-}
-
-#Zone3_CV:hover{
-    inset: 54.5% 2% 5.5% 52%; /*Positionné à 54.5% du haut, 2% de la droite, 5.5% du bas et 52% de la gauche*/
-}
+#Zone3_CV{ inset: 55% 2% 5% 52%; /*Positionné à 55% du haut, 2% de la droite, 5% du bas et 52% de la gauche*/}
 
 /*SECTION FOOTER*/
 
@@ -388,7 +409,6 @@ body {
     height: 60px; /*Hauteur de 100%*/
     width: 100%; /*Largeur de 100%*/
     color: #c4bcbc; /*Couleur du texte*/
-    border-top: white solid 2px;
 }
 
 #W3C_css{
