@@ -242,23 +242,16 @@ body {
 
 #Projet1{ inset: 5% 52% 55% 2%; /*Positionné à 5% du haut, 52% de la droite, 50% du bas et 2% de la gauche*/}
 
-#Projet1 p{
+#Projet1 p{ /*Largeur de 40% et taille de police à 20px*/
     width: 40%;
     font-size: 20px;
 }
 
-#Projet1 video{
+#Projet1 video{ /*Fixe la vidéo*/
     float: right;
     position: relative;
     top: -220px;
     right: -15px;
-}
-
-#Projet1 #video_python{
-    position: relative;
-    right: -320px;
-    text-decoration: none;
-    color: #c4bcbc;
 }
 
 #Projet1 a{
