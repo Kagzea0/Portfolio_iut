@@ -250,7 +250,7 @@ body {
 #Projet1 video{ /*Fixe la vidéo*/
     float: right;
     position: relative;
-    top: -220px;
+    top: -215px;
     right: -15px;
 }
 
@@ -269,7 +269,7 @@ body {
 #Projet2 img{
     float: right;
     position: relative;
-    top: -90%;
+    top: -97.5%;
 }
 
 #Projet2 a{
