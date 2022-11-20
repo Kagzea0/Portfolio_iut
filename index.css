@@ -209,6 +209,26 @@ body {
 
 #Zone1-2_CV{ inset: 55% 52% 5% 2%; /*Positionné à 55% du haut, 52% de la droite, 5% du bas et 2% de la gauche*/}
 
+#Zone1-2_CV_div1{ /*Positionne cette zone de texte*/
+    float: left;
+    width: 48%;
+    margin: 0px;
+}
+
+#Zone1-2_CV_div2{ /*Positionne cette zone de texte*/
+    float: right;
+    width: 47.5%;
+    margin: -10px;
+    margin-top: 0;
+}
+
+#Zone1-2_CV_div3{ /*Positionne cette zone de texte*/
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 22%;
+}
+
 #Zone1-3_CV{ inset: 5% 2% 50% 52%; /*Positionné à 5% du haut, 2% de la droite, 50% du bas et 52% de la gauche*/ }
 
 #Zone1-4_Video{ inset: 55% 2% 5% 52%; /*Positionné à 55% du haut, 2% de la droite, 5% du bas et 52% de la gauche*/}
@@ -254,19 +274,19 @@ body {
     right: -15px;
 }
 
-#Projet1 a{
-    text-decoration: none;
+#Projet1 a{ 
+    text-decoration: none; 
     color: #c4bcbc;
 }
 
 #Projet2{ inset: 50% 52% 5% 2%; /*Positionné à 55% du haut, 52% de la droite, 5% du bas et 2% de la gauche*/}
 
-#Projet2 p{
+#Projet2 p{ 
     width: 55%;
     font-size: 20px;
 }
 
-#Projet2 img{
+#Projet2 img{ /*Positionne cette image*/
     float: right;
     position: relative;
     top: -97.5%;
@@ -282,38 +302,38 @@ body {
     padding-top: 0;
 }
 
-.DevSoft img{
+.DevSoft img{ /*Positionne cette image*/
     display: block;
     margin: 5px;
 }
 
-.DevSoft1{
+.DevSoft1{ /*Positionne cette zone de texte*/
     margin-top: 10%;
 }
 
-.DevSoft2{
+.DevSoft2{ /*Positionne cette zone de texte*/
     margin-top: -24%;
 }
 
-.DevSoft1_Cont{
+.DevSoft1_Cont{ /*Positionne cette image*/
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.DevSoft1_Cont img{
+.DevSoft1_Cont img{ /*Positionne cette image*/
     margin: 7px;
     margin-left: 10%;
     margin-right: 10px;
 }
 
-.DevSoft2_Cont{
+.DevSoft2_Cont{ /*Positionne cette image*/ 
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.DevSoft2_Cont img{
+.DevSoft2_Cont img{ /*Positionne cette image*/
     margin: 7px;
     margin-left: 65%;
     margin-right: 15px;
@@ -324,38 +344,38 @@ body {
     padding-top: 0;
 }
 
-.GraSoft img{
+.GraSoft img{ /*Positionne cette image*/
     display: block;
     margin: 5px;
 }
 
-.GraSoft1{
+.GraSoft1{ /*Positionne cette zone de texte*/
     margin-top: 10%;
 }
 
-.GraSoft2{
+.GraSoft2{ /*Positionne cette zone de texte*/
     margin-top: -24%;
 }
 
-.GraSoft1_Cont{
+.GraSoft1_Cont{ /*Positionne cette zone de texte*/
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.GraSoft1_Cont img{
+.GraSoft1_Cont img{ /*Positionne cette image*/
     margin: 7px;
     margin-left: 10%;
     margin-right: 10px;
 }
 
-.GraSoft2_Cont{
+.GraSoft2_Cont{ /*Positionne cette zone de texte*/
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.GraSoft2_Cont img{
+.GraSoft2_Cont img{ /*Positionne cette image*/
     margin: 7px;
     margin-left: 65%;
     margin-right: 15px;
@@ -404,19 +424,19 @@ body {
     color: #c4bcbc; /*Couleur du texte*/
 }
 
-#W3C_css{
+#W3C_css{ /*Positionne cette image*/
     position: absolute;
     top: 20px;
     left: 20px;
 }
 
-#span_footer{
+#span_footer{ /*Positionne ces images*/
     display: flex; 
     justify-content: center;
     align-items: center;
 }
 
-#mail{
+#mail{ /*Positionne cette zone de texte*/
     position: absolute;
     right: 25px;
     top: 25px;
@@ -439,7 +459,7 @@ body {
     justify-content: center;
 }
 
-#formulaire{
+#formulaire{ /*Positionne et stylise ce formulaire*/
     letter-spacing: 1px;
     font-size: xx-large;
     border: #d679ed 2px solid;
@@ -452,12 +472,12 @@ body {
     padding-bottom: 22.5%;
 }
 
-button {
+button{ /*Règle taille du bouton*/
     font-size: x-large;
 }
 
-#p_form{
+#p_form{ /*Positionne cette zone de texte*/
     display: flex;
     justify-content: center;
-    vertical-align:sub;
+    vertical-align: sub;
 }
