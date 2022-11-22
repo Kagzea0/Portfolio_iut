@@ -189,9 +189,11 @@ body {
     width: 100%; /*Largeur de 100%*/
     color: #c4bcbc; /*Couleur du texte*/
     line-height: 160%; /*Taille de l'interligne*/
+    font-size: 18px;
+    font-weight: 700;
 }
 
-.About h3{
+.About .div_h3_about{
     position: absolute;
     border-radius: 25px; /*Coin de la bordure avec un arrondi de rayon de 25px*/
     padding: 25px; /*Marge intérieure de 25px*/
@@ -200,7 +202,7 @@ body {
     transition-duration: 250ms; /*Transition avec une durée de 250ms*/
 }
 
-.About h3:hover{
+.About .div_h3_about:hover{
     transition-duration: 250ms; /*Transition avec une durée de 250ms*/
     box-shadow: 0px 0px 10px 2.5px #121739;
 }
@@ -233,6 +235,11 @@ body {
 
 #Zone1-4_Video{ inset: 55% 2% 5% 52%; /*Positionné à 55% du haut, 2% de la droite, 5% du bas et 52% de la gauche*/}
 
+div #Zone1-4_Video iframe{
+    width: 100%;
+    height: 100%;
+}
+
 #img_map{
     float: right;
     position: inherit;
@@ -248,9 +255,11 @@ body {
     height: 100%; /*Hauteur de 100%*/
     width: 100%; /*Largeur de 100%*/
     color: #c4bcbc; /*Couleur du texte*/
+    font-size: 18px;
+    font-weight: 700;
 }
 
-.Personal h3{
+.Personal .div_h3_Personal{
     position: absolute;
     border-radius: 25px; /*Coin de la bordure avec un arrondi de rayon de 25px*/
     padding: 25px; /*Marge intérieure de 25px*/
@@ -258,7 +267,7 @@ body {
     transition-duration: 250ms; /*Transition avec une durée de 250ms*/
 }
 
-.Personal h3:hover{ transition-duration: 250ms; /*Transition avec une durée de 250ms*/}
+.Personal .div_h3_Personal:hover{ transition-duration: 250ms; /*Transition avec une durée de 250ms*/}
 
 #Projet1{ inset: 5% 52% 55% 2%; /*Positionné à 5% du haut, 52% de la droite, 50% du bas et 2% de la gauche*/}
 
@@ -295,6 +304,14 @@ body {
 #Projet2 a{
     text-decoration: none;
     color: #c4bcbc;
+}
+
+#Capture_APLI{
+    width: 280px;
+}
+
+.Personal img{
+    width: 10%;
 }
 
 #DevSoft{ 
@@ -389,9 +406,11 @@ body {
     height: 100%; /*Hauteur de 100%*/
     width: 100%; /*Largeur de 100%*/
     color: #c4bcbc; /*Couleur du texte*/
+    font-size: 18px;
+    font-weight: 700;
 }
 
-.Professional h3{
+.Professional .div_h3_Professional{
     position: absolute;
     border-radius: 25px; /*Coin de la bordure avec un arrondi de rayon de 25px*/
     padding: 25px; /*Marge intérieure de 25px*/
@@ -401,7 +420,7 @@ body {
     font-size: 16px;
 }
 
-.Professional h3:hover{
+.Professional .div_h3_Professional:hover{
     transition-duration: 250ms; /*Transition avec une durée de 250ms*/
     box-shadow: 0px 0px 10px 2.5px #121739;
 }
@@ -440,6 +459,14 @@ body {
     position: absolute;
     right: 25px;
     top: 25px;
+}
+
+#github_logo{
+    width: 53px;
+}
+
+#linkedin_logo{
+    width: 90px;
 }
 
 /*PAGE CONTACT*/

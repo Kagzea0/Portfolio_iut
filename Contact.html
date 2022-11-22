@@ -15,17 +15,17 @@
     </header>
     <p class="Contact"></p>
 
-    <form method='post'action="formulaire.php" id="formulaire">
+    <form method='post' action="formulaire.php" id="formulaire">
         <div id="info">
             <p>First Name</p><input type="text" name="prenom">
             <p>Last Name</p><input type="text" name="nom">
         </div>
         <div id="message">
-            <p>Message</p><input class="message" type="text" name="comm"></br></br>
+            <p>Message</p><input class="message" type="text" name="comm"><br><br>
             <button type ='submit'>Submit</button>
             <button type="reset">Reset</button>
         </div>
-        <?php 
+        <?php
             print "Merci pour votre message ";
             print $_POST["nom"] ;
             print " ";
