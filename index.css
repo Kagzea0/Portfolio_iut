@@ -189,7 +189,7 @@ body {
     width: 100%; /*Largeur de 100%*/
     color: #c4bcbc; /*Couleur du texte*/
     line-height: 160%; /*Taille de l'interligne*/
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
 }
 
@@ -228,7 +228,7 @@ body {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-top: 22%;
+    margin-top: 15%;
 }
 
 #Zone1-3_CV{ inset: 5% 2% 50% 52%; /*Positionné à 5% du haut, 2% de la droite, 50% du bas et 52% de la gauche*/ }
@@ -240,11 +240,10 @@ div #Zone1-4_Video iframe{
     height: 100%;
 }
 
-#img_map{
-    float: right;
+#cont_img_map{
     position: inherit;
-    top: 20px; /*Positionné à 20px du haut*/
-    left: 275px; /*Positionné à 275px de la gauche*/
+    top: 10%;
+    right: 5%;
 }
 
 /*SECTION PERSONAL*/ 
@@ -276,11 +275,10 @@ div #Zone1-4_Video iframe{
     font-size: 20px;
 }
 
-#Projet1 video{ /*Fixe la vidéo*/
-    float: right;
-    position: relative;
-    top: -215px;
-    right: -15px;
+#Projet1 #cont_proj_py{ /*Fixe la vidéo*/
+    position: inherit;
+    top: 12.5%;
+    right: 5%;
 }
 
 #Projet1 a{ 
@@ -291,14 +289,15 @@ div #Zone1-4_Video iframe{
 #Projet2{ inset: 50% 52% 5% 2%; /*Positionné à 55% du haut, 52% de la droite, 5% du bas et 2% de la gauche*/}
 
 #Projet2 p{ 
-    width: 55%;
+    width: 50%;
     font-size: 20px;
 }
 
-#Projet2 img{ /*Positionne cette image*/
-    float: right;
-    position: relative;
-    top: -97.5%;
+#Projet2 #cont_img_apli{ /*Positionne cette image*/
+    position: inherit;
+    top: 5%;
+    right: 5%;
+    width: 45%;
 }
 
 #Projet2 a{
